@@ -7,33 +7,17 @@
     <title>Klok</title>
 </head>
 <body>
-<div class="section-1">
-    <div class="container">
-            foto van klok invoegen 
-            <img src="" alt=""> 
-            <h1>11:39:21</h1>
+    <section class="container">
+        <div id="clock"></div>
 
-        <div class="column">
-            <select>
-                <option value="Uur">Uur</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-            </select>
+        <h2>Hoe laat moet Joyce naar huis vandaag?</h2>
+
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="time">
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">Wekker aan</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Wekker uit</button>
         </div>
-
-        <div class="column">
-            <select>
-                <option value="Min">Minuut</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-            </select>
-        </div>
-    </div>
-    <button>Zet Alarm</button>
-</div>
-
-<script src="script.js"></script>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
